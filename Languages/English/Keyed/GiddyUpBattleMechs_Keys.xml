@@ -6,4 +6,5 @@
 	<GU_BME_BodySizeFilter_Description>Filter mountable mechanoids by body size</GU_BME_BodySizeFilter_Description>
 	<GU_BME_Mechselection_Title>Select mountable mechanoids</GU_BME_Mechselection_Title>
 	<GU_BME_Mechselection_Description>Use the filter above to filter by body size, and click tiles to make exceptions</GU_BME_Mechselection_Description>
+	<GU_BME_Reason_NotActivated>Cannot mount, mechanoid must be activated</GU_BME_Reason_NotActivated>
 </LanguageData>

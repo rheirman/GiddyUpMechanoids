@@ -13,7 +13,7 @@ namespace GiddyUpBattleMechs.Harmony
     {
         static void Postfix(ExtendedPawnData riderData, JobDriver_Mounted __instance, ref bool __result)
         {
-            if(__instance.pawn.RaceProps.IsMechanoid && !__instance.pawn.Drafted)
+            if(__instance.pawn.RaceProps.IsMechanoid && !__instance.Rider.Drafted)
             {
                 //only allow mechanoid mounts in battle for now
                 __result = true;

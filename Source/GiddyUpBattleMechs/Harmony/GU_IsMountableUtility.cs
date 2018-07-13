@@ -21,9 +21,8 @@ namespace GiddyUpBattleMechs.Harmony
         }
         static bool Prefix(Pawn pawn, ref bool __result)
         {
-            if (pawn.IsHacked())
+            if (pawn.IsHacked() && pawn.IsActivated())
             {
-
                 __result = true;
                 return false;
             }

@@ -15,25 +15,18 @@ namespace GiddyUpBattleMechs
     {
         public override string ModIdentifier => "GiddyUpBattleMechs";
         public static SettingHandle<DictAnimalRecordHandler> mechSelector;
-        internal static SettingHandle<String> tabsHandler;
         private static Color highlight1 = new Color(0.5f, 0, 0, 0.1f);
 
         internal static SettingHandle<float> bodySizeFilter;
-        String[] tabNames = { "GU_BME_tab1".Translate()};
 
         public override void DefsLoaded()
         {
             base.DefsLoaded();
-            tabsHandler = Settings.GetHandle<String>("tabs", "GU_BME_Tabs_Title".Translate(), "", "none");
-            tabsHandler.CustomDrawer = rect => { return DrawUtility.CustomDrawer_Tabs(rect, tabsHandler, tabNames); };
-
             bodySizeFilter = Settings.GetHandle<float>("bodySizeFilter", "GU_BME_BodySizeFilter_Title".Translate(), "GU_BME_BodySizeFilter_Description".Translate(), 1.01f);
             mechSelector = Settings.GetHandle<DictAnimalRecordHandler>("mechSelector", "GU_BME_Mechselection_Title".Translate(), "GU_BME_Mechselection_Description".Translate(), null);
             bodySizeFilter.CustomDrawer = rect => { return DrawUtility.CustomDrawer_Filter(rect, bodySizeFilter, false, 0, 5, highlight1); };
             mechSelector.CustomDrawer = rect => { return DrawUtility.CustomDrawer_MatchingAnimals_active(rect, mechSelector, GetMechDefs(), bodySizeFilter, "GUC_SizeOk".Translate(), "GUC_SizeNotOk".Translate()); };
 
-            bodySizeFilter.VisibilityPredicate = delegate { return tabsHandler.Value == tabNames[0]; };
-            mechSelector.VisibilityPredicate = delegate { return tabsHandler.Value == tabNames[0]; };
 
         }
         private static List<ThingDef> GetMechDefs()
