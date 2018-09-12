@@ -22,12 +22,12 @@ namespace GiddyUpBattleMechs
         public override void DefsLoaded()
         {
             base.DefsLoaded();
+            List<ThingDef> mechDefs = GetMechDefs();
             bodySizeFilter = Settings.GetHandle<float>("bodySizeFilter", "GU_BME_BodySizeFilter_Title".Translate(), "GU_BME_BodySizeFilter_Description".Translate(), 1.01f);
             mechSelector = Settings.GetHandle<DictAnimalRecordHandler>("mechSelector", "GU_BME_Mechselection_Title".Translate(), "GU_BME_Mechselection_Description".Translate(), null);
             bodySizeFilter.CustomDrawer = rect => { return DrawUtility.CustomDrawer_Filter(rect, bodySizeFilter, false, 0, 5, highlight1); };
             mechSelector.CustomDrawer = rect => { return DrawUtility.CustomDrawer_MatchingAnimals_active(rect, mechSelector, GetMechDefs(), bodySizeFilter, "GUC_SizeOk".Translate(), "GUC_SizeNotOk".Translate()); };
-
-
+            DrawUtility.filterAnimals(ref mechSelector, mechDefs, bodySizeFilter);
         }
         private static List<ThingDef> GetMechDefs()
         {

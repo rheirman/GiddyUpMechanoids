@@ -12,6 +12,7 @@ namespace GiddyUpBattleMechs.Harmony
 {
     //For some reason, using a normal harmonypatch here with the folloing types doesn't work, as harmony throws an error that it can't find the method. 
     //[HarmonyPatch(new Type[] { typeof(Pawn), typeof(IsMountableUtility.Reason) })]
+    /*
     [HarmonyPatch]
     class GU_IsMountableUtility_isMountable
     {
@@ -29,4 +30,5 @@ namespace GiddyUpBattleMechs.Harmony
             return true;
         }
     }
+    */
 }
