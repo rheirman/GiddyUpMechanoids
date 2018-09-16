@@ -63,9 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="GU_BME_DefOf.cs" />
     <Compile Include="Harmony\GU_FloatMenuUtility.cs" />
-    <Compile Include="Harmony\GU_IsMountableUtility.cs" />
     <Compile Include="Harmony\GU_JobDriver_Mounted.cs" />
+    <Compile Include="Harmony\WTH_Recipe_ModifyMechanoid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

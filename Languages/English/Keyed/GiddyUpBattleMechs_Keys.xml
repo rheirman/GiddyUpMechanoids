@@ -8,4 +8,6 @@
 	<GU_BME_Mechselection_Description>Use the filter above to filter by body size, and click tiles to make exceptions</GU_BME_Mechselection_Description>
 	<GU_BME_Reason_NotActivated>Cannot mount, mechanoid must be activated</GU_BME_Reason_NotActivated>
 	<GU_BME_Reason_NotHacked>Cannot mount, mechanoid not hacked</GU_BME_Reason_NotHacked>
+	<GU_BME_Reason_NoModule>Cannot mount, no mounting module installed</GU_BME_Reason_NoModule>
+	<GU_BME_Reason_Turret>Cannot mount, turret in the way</GU_BME_Reason_Turret>
 </LanguageData>

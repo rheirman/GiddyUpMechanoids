@@ -27,13 +27,21 @@ namespace GiddyUpBattleMechs.Harmony
 
                 if (target.RaceProps.IsMechanoid)
                 {
-                    if (!target.IsHacked())
+                    if(target.health == null || !target.IsHacked())
                     {
-                        opts.Add(new FloatMenuOption("GU_BME_Reason_NotHacked".Translate(), null, MenuOptionPriority.Low));
                         return false;
                     }
-
-                    if (!IsAllowedInModOptions(target.def.defName))
+                    if (target.health.hediffSet.HasHediff(WTH_DefOf.WTH_MountedTurret))
+                    {
+                        opts.Add(new FloatMenuOption("GU_BME_Reason_Turret".Translate(), null, MenuOptionPriority.Low));
+                        return false;
+                    }
+                    if (!target.health.hediffSet.HasHediff(GU_BME_DefOf.GU_BME_GiddyUpModule))
+                    {
+                        opts.Add(new FloatMenuOption("GU_BME_Reason_NoModule".Translate(), null, MenuOptionPriority.Low));
+                        return false;
+                    }                  
+                    if (!Base.IsAllowedInModOptions(target.def.defName))
                     {
                         opts.Add(new FloatMenuOption("GUC_NotInModOptions".Translate(), null, MenuOptionPriority.Low));
                         return false;
@@ -49,17 +57,5 @@ namespace GiddyUpBattleMechs.Harmony
             return true;
         }
 
-        public static bool IsAllowedInModOptions(String defName)
-        {
-            Log.Message("calling IsAllowedInModOptions for defName: " + defName);
-            bool found = Base.mechSelector.Value.InnerList.TryGetValue(defName, out GiddyUpCore.AnimalRecord value);
-            Log.Message("found: " + found);
-            Log.Message("value: " + value);
-            if (found && value.isSelected)
-            {
-                return true;
-            }
-            return false;
-        }
     }
 }

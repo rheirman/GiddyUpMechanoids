@@ -42,6 +42,16 @@ namespace GiddyUpBattleMechs
             }
             return mechs;
         }
+
+        public static bool IsAllowedInModOptions(String defName)
+        {
+            bool found = Base.mechSelector.Value.InnerList.TryGetValue(defName, out GiddyUpCore.AnimalRecord value);
+            if (found && value.isSelected)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 
 }
