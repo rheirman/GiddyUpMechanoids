@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GU_BME_CraftGiddyUpModule.label>Stelle Giddy-Up! Modul her</GU_BME_CraftGiddyUpModule.label>
+  <GU_BME_CraftGiddyUpModule.description>Stelle ein Giddy-Up! Modul her</GU_BME_CraftGiddyUpModule.description>
+  <GU_BME_CraftGiddyUpModule.jobString>Erstellt</GU_BME_CraftGiddyUpModule.jobString>
+
+  <GU_BME_InstallGiddyUpModule.label>Installiere Giddy-Up! Modul</GU_BME_InstallGiddyUpModule.label>
+  <GU_BME_InstallGiddyUpModule.description>Erlaubt Kolonisten diesen Mechanoiden zu reiten.</GU_BME_InstallGiddyUpModule.description>
+  <GU_BME_InstallGiddyUpModule.jobString>Modifiziere Mechanoiden</GU_BME_InstallGiddyUpModule.jobString>
+
+
+</LanguageData>
