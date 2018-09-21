@@ -44,12 +44,14 @@ namespace GiddyUpMechanoids.Harmony
             TextureUtility.setDrawOffset(riderData);
             mechData.ownedBy = rider;
             riderData.owning = mech;
+            mech.health.AddHediff(GU_Mech_DefOf.GU_Mech_GiddyUpModule);
             if (mech.jobs == null)
             {
                 mech.jobs = new Pawn_JobTracker(mech);
             }
             Job job = new Job(GUC_JobDefOf.Mounted, rider) { count = 1 };
             mech.jobs.StartJob(job, JobCondition.InterruptForced);
+
 
         }
     }

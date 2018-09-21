@@ -20,6 +20,11 @@ namespace GiddyUpMechanoids.Harmony
     {
         static void Postfix(Vector3 clickPos, Pawn pawn, List<FloatMenuOption> opts)
         {
+            if (Base.IsAllowedInModOptions(pawn.def.defName)) //don't allow mechs that are mountable to be mounted
+            {
+                return;
+            }
+
             foreach (LocalTargetInfo current in GenUI.TargetsAt(clickPos, TargetingParameters.ForAttackHostile(), true))
             {
 

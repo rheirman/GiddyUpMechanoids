@@ -15,7 +15,7 @@
 				<li>WTH_MechanoidChip</li>
 			  </thingDefs>
 			</filter>
-			<count>5</count>
+			<count>2</count>
 		</li>
 		<li>
 			<filter>
@@ -39,17 +39,26 @@
 					<li>Plasteel</li>
 				</thingDefs>
 			</filter>
-			<count>25</count>
+			<count>20</count>
 		</li>
   		<li>
 			<filter>
 				<thingDefs>
-					<li>DevilStrand</li>
+					<li>DevilstrandCloth</li>
 				</thingDefs>
 			</filter>
-			<count>25</count>
+			<count>40</count>
 		</li>
 	</ingredients>
+	<fixedIngredientFilter>
+			<thingDefs>
+				<li>WTH_MechanoidChip</li>
+				<li>WTH_MechanoidParts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plasteel</li>
+				<li>DevilstrandCloth</li>			
+			</thingDefs>
+		</fixedIngredientFilter>
 	<products>
 	  <GU_Mech_GiddyUpModule>1</GU_Mech_GiddyUpModule>
 	</products>
@@ -86,14 +95,6 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Reactor</li>
-		</appliedOnFixedBodyParts>
 		<addsHediff>GU_Mech_GiddyUpModule</addsHediff>
 		<modExtensions>
 			<li Class="WhatTheHack.DefModExtension_Recipe">

@@ -4,6 +4,11 @@
 		<label>Giddy-up! module installed</label>
 		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
 		<isBad>false</isBad>
+		<modExtensions>
+			<li Class="WhatTheHack.DefModExtension_Hediff">
+				<extraButcherProduct>GU_Mech_GiddyUpModule</extraButcherProduct>
+			</li>
+		</modExtensions>
 	  </HediffDef>  
   </Defs>
   
