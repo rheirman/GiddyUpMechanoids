@@ -1,5 +1,5 @@
 # Giddy-up! Mechanoids
-Work in progress
+Mechanoid riding.
 
 ## Install
 Download the zip from one of the releases, unpack and place the unpacked folder in the Rimworld mods folder. 
