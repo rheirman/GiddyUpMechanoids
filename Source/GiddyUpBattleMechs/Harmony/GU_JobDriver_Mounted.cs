@@ -1,6 +1,7 @@
 ﻿using GiddyUpCore.Jobs;
 using GiddyUpCore.Storage;
 using Harmony;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace GiddyUpBattleMechs.Harmony
     {
         static void Postfix(ExtendedPawnData riderData, JobDriver_Mounted __instance, ref bool __result)
         {
-            if(__instance.pawn.RaceProps.IsMechanoid && !__instance.Rider.Drafted)
+            if(__instance.pawn.Faction == Faction.OfPlayer && __instance.pawn.RaceProps.IsMechanoid && !__instance.Rider.Drafted)
             {
                 //only allow mechanoid mounts in battle for now
                 __result = true;

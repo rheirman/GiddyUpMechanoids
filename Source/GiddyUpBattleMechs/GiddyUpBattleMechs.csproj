@@ -67,6 +67,7 @@
     <Compile Include="Harmony\FloatMenuMakerMap.cs" />
     <Compile Include="Harmony\GU_FloatMenuUtility.cs" />
     <Compile Include="Harmony\GU_JobDriver_Mounted.cs" />
+    <Compile Include="Harmony\WTH_IncidentWorker_Raid_TryExecuteWorker.cs" />
     <Compile Include="Harmony\WTH_Recipe_ModifyMechanoid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

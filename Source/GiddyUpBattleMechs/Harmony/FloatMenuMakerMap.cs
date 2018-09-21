@@ -20,9 +20,13 @@ namespace GiddyUpBattleMechs.Harmony
     {
         static void Postfix(Vector3 clickPos, Pawn pawn, List<FloatMenuOption> opts)
         {
-            if (pawn.IsHacked())
+            foreach (LocalTargetInfo current in GenUI.TargetsAt(clickPos, TargetingParameters.ForAttackHostile(), true))
             {
-                GUC_FloatMenuUtility.AddMountingOptions(clickPos, pawn, opts);
+
+                if ((current.Thing is Pawn target) && target.IsHacked())
+                {
+                    GUC_FloatMenuUtility.AddMountingOptions(target, pawn, opts);
+                }
             }
         }
     }
