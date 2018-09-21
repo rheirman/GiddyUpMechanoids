@@ -2,6 +2,8 @@
 <LanguageData>
 	<GU_BME_Tabs_Title>Mod settings</GU_BME_Tabs_Title>
 	<GU_BME_tab1>Change mod settings..</GU_BME_tab1>
+	<GU_BME_MountChance_Title>Chance enemies mount mechs</GU_BME_MountChance_Title>
+	<GU_BME_MountChance_Description>The chance for each hacked mechanoid allowed to be mountable in the mod options that it's mounted by an enemy pawn. </GU_BME_MountChance_Description>
 	<GU_BME_BodySizeFilter_Title>Filter by body size</GU_BME_BodySizeFilter_Title>
 	<GU_BME_BodySizeFilter_Description>Filter mountable mechanoids by body size</GU_BME_BodySizeFilter_Description>
 	<GU_BME_Mechselection_Title>Select mountable mechanoids</GU_BME_Mechselection_Title>

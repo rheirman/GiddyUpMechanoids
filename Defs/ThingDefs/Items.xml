@@ -2,9 +2,9 @@
   <ThingDef ParentName="BodyPartBase">
     <defName>GU_BME_GiddyUpModule</defName>
     <label>Giddy-up! module</label>
-    <description>Can be installed on mechanoids so they can be mounted by colonists.</description>
+    <description>Can be installed on mechanoids so they can be mounted by colonists. Drills itself tight to mechanoid's outer shell, then allows direct control through neural interface linked to a controller pad, located on the left side of the techno saddle. The seat is lined with devilstrand for more backside comfort. </description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemBionic</texPath>
+      <texPath>Things/Giddy_Up_Module</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>

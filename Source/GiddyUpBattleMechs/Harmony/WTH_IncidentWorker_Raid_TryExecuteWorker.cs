@@ -18,32 +18,18 @@ namespace GiddyUpBattleMechs.Harmony
     {
         static void Postfix(ref List<Pawn> list)
         {
-            Log.Message("SpawnHackedMechanoids");
             List<Pawn> mechs = list.FindAll((Pawn p) => p.IsHacked());
             List<Pawn> humanlikes = list.FindAll((Pawn h) => h.RaceProps.Humanlike && GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(h).mount == null);
 
-            if(mechs.Count() == 0)
-            {
-                Log.Message("no hacked mechs in raid");
-            }
-            if(humanlikes.Count() == 0)
-            {
-                Log.Message("no humanlikes found");
-            }
             Random r = new Random();
             foreach(Pawn mech in mechs)
             {
-                Log.Message("trying to mount mech: " + mech.def.defName);
-                if (Base.IsAllowedInModOptions(mech.def.defName))
+                if (Rand.Chance((Base.mountChance)/100f) && Base.IsAllowedInModOptions(mech.def.defName))
                 {
-                    Log.Message("mech allowed in mod options");
                     if(humanlikes.Count > 0)
                     {
 
                         Pawn rider = humanlikes.Pop();
-                        Log.Message("assigning rider to mech");
-                        Log.Message("rider: " + rider);
-                        Log.Message("mech: " + mech);
                         RideMech(mech, rider);
                     }
                 }

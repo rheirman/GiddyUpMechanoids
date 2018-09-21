@@ -14,6 +14,7 @@ namespace GiddyUpBattleMechs
     public class Base : ModBase
     {
         public override string ModIdentifier => "GiddyUpBattleMechs";
+        internal static SettingHandle<int> mountChance;
         public static SettingHandle<DictAnimalRecordHandler> mechSelector;
         private static Color highlight1 = new Color(0.5f, 0, 0, 0.1f);
 
@@ -23,6 +24,7 @@ namespace GiddyUpBattleMechs
         {
             base.DefsLoaded();
             List<ThingDef> mechDefs = GetMechDefs();
+            mountChance = Settings.GetHandle<int>("mountChance", "GU_BME_MountChance_Title".Translate(), "GU_BME_MountChance_Description".Translate(), 40, Validators.IntRangeValidator(0, 100));
             bodySizeFilter = Settings.GetHandle<float>("bodySizeFilter", "GU_BME_BodySizeFilter_Title".Translate(), "GU_BME_BodySizeFilter_Description".Translate(), 1.01f);
             mechSelector = Settings.GetHandle<DictAnimalRecordHandler>("mechSelector", "GU_BME_Mechselection_Title".Translate(), "GU_BME_Mechselection_Description".Translate(), null);
             bodySizeFilter.CustomDrawer = rect => { return DrawUtility.CustomDrawer_Filter(rect, bodySizeFilter, false, 0, 5, highlight1); };
