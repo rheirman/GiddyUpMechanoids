@@ -1,4 +1,4 @@
-# GiddyUpBattleMechs
+# Giddy-up! Mechanoids
 Work in progress
 
 ## Install
