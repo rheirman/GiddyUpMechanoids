@@ -9,11 +9,11 @@ using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace GiddyUpBattleMechs
+namespace GiddyUpMechanoids
 {
     public class Base : ModBase
     {
-        public override string ModIdentifier => "GiddyUpBattleMechs";
+        public override string ModIdentifier => "GiddyUpMechanoids";
         internal static SettingHandle<int> mountChance;
         public static SettingHandle<DictAnimalRecordHandler> mechSelector;
         private static Color highlight1 = new Color(0.5f, 0, 0, 0.1f);

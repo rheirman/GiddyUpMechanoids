@@ -1,6 +1,6 @@
 <Defs>
   <RecipeDef>
-	<defName>GU_BME_CraftGiddyUpModule</defName>
+	<defName>GU_Mech_CraftGiddyUpModule</defName>
 	<label>craft giddy-up! module</label>
 	<description>Craft a giddy-up! module</description>
 	<jobString>Crafting</jobString>
@@ -31,7 +31,7 @@
 					<li>ComponentIndustrial</li>
 				</thingDefs>
 			</filter>
-			<count>5</count>
+			<count>2</count>
 		</li>
 		<li>
 			<filter>
@@ -39,22 +39,30 @@
 					<li>Plasteel</li>
 				</thingDefs>
 			</filter>
-			<count>30</count>
+			<count>25</count>
+		</li>
+  		<li>
+			<filter>
+				<thingDefs>
+					<li>DevilStrand</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
 		</li>
 	</ingredients>
 	<products>
-	  <GU_BME_GiddyUpModule>1</GU_BME_GiddyUpModule>
+	  <GU_Mech_GiddyUpModule>1</GU_Mech_GiddyUpModule>
 	</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	<workSkill>Crafting</workSkill>
-	<researchPrerequisite>GU_BME_GiddyUpModule</researchPrerequisite>
+	<researchPrerequisite>GU_Mech_GiddyUpModule</researchPrerequisite>
   </RecipeDef>
 	
 	
 	<RecipeDef>
-		<defName>GU_BME_InstallGiddyUpModule</defName>
+		<defName>GU_Mech_InstallGiddyUpModule</defName>
 		<label>install giddy-up! module</label>
 		<description>Allows the mechanoid to be mounted by your colonists.</description>
 		<workerClass>WhatTheHack.Recipes.Recipe_ModifyMechanoid</workerClass>
@@ -72,7 +80,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GU_BME_GiddyUpModule</li>
+						<li>GU_Mech_GiddyUpModule</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -86,7 +94,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Reactor</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>GU_BME_GiddyUpModule</addsHediff>
+		<addsHediff>GU_Mech_GiddyUpModule</addsHediff>
 		<modExtensions>
 			<li Class="WhatTheHack.DefModExtension_Recipe">
 				<requireBed>true</requireBed>

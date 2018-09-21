@@ -11,7 +11,7 @@ using GiddyUpCore.Jobs;
 using GiddyUpCore.Storage;
 using GiddyUpCore.Utilities;
 
-namespace GiddyUpBattleMechs.Harmony
+namespace GiddyUpMechanoids.Harmony
 {
     [HarmonyPatch(typeof(IncidentWorker_Raid_TryExecuteWorker), "SpawnHackedMechanoids")]
     class WTH_IncidentWorker_Raid_TryExecuteWorker

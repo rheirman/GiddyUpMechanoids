@@ -7,8 +7,8 @@
     <ProjectGuid>{46E4865D-62E1-4437-A3A3-CAB8BB461735}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GiddyUpBattleMechs</RootNamespace>
-    <AssemblyName>GiddyUpBattleMechs</AssemblyName>
+    <RootNamespace>GiddyUpMechanoids</RootNamespace>
+    <AssemblyName>GiddyUpMechanoids</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
-    <Compile Include="GU_BME_DefOf.cs" />
+    <Compile Include="GU_Mech_DefOf.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap.cs" />
     <Compile Include="Harmony\GU_FloatMenuUtility.cs" />
     <Compile Include="Harmony\GU_JobDriver_Mounted.cs" />

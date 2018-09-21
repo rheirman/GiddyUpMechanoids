@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GiddyUpBattleMechs.Harmony
+namespace GiddyUpMechanoids.Harmony
 {
     [HarmonyPatch(typeof(JobDriver_Mounted), "shouldCancelJob")]
     class GU_JobDriver_Mounted_ShouldCancelJob

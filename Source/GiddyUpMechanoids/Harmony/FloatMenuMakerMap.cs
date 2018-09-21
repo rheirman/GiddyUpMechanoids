@@ -12,7 +12,7 @@ using GiddyUpCore.Jobs;
 using GiddyUpCore.Utilities;
 using WhatTheHack;
 
-namespace GiddyUpBattleMechs.Harmony
+namespace GiddyUpMechanoids.Harmony
 {
     [HarmonyPatch(typeof(FloatMenuMakerMap), "AddDraftedOrders")]
     [HarmonyPatch(new Type[] { typeof(Vector3), typeof(Pawn), typeof(List<FloatMenuOption>) })]

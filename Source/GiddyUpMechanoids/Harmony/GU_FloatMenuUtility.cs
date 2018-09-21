@@ -9,7 +9,7 @@ using UnityEngine;
 using Verse;
 using WhatTheHack;
 
-namespace GiddyUpBattleMechs.Harmony
+namespace GiddyUpMechanoids.Harmony
 {
     [HarmonyPatch(typeof(GUC_FloatMenuUtility), "AddMountingOptions")]
     static class GU_FloatMenuUtility_AddMountingOptions
@@ -23,7 +23,7 @@ namespace GiddyUpBattleMechs.Harmony
                     opts.Add(new FloatMenuOption("GU_BME_Reason_Turret".Translate(), null, MenuOptionPriority.Low));
                     return false;
                 }
-                if (!target.health.hediffSet.HasHediff(GU_BME_DefOf.GU_BME_GiddyUpModule))
+                if (!target.health.hediffSet.HasHediff(GU_Mech_DefOf.GU_Mech_GiddyUpModule))
                 {
                     opts.Add(new FloatMenuOption("GU_BME_Reason_NoModule".Translate(), null, MenuOptionPriority.Low));
                     return false;

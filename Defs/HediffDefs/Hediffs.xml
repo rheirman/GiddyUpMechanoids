@@ -1,6 +1,6 @@
   <Defs>
       <HediffDef>
-		<defName>GU_BME_GiddyUpModule</defName>
+		<defName>GU_Mech_GiddyUpModule</defName>
 		<label>Giddy-up! module installed</label>
 		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
 		<isBad>false</isBad>

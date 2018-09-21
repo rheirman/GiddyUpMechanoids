@@ -6,7 +6,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[race/fleshType = "Mechanoid"]/recipes</xpath>
 				<value>
-					<li>GU_BME_InstallGiddyUpModule</li>
+					<li>GU_Mech_InstallGiddyUpModule</li>
 				</value>
 			</li> 
 		</operations>
@@ -14,7 +14,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "WTH_TableMechanoidWorkshop"]/recipes</xpath>
 		<value>
-			<li>GU_BME_CraftGiddyUpModule</li>
+			<li>GU_Mech_CraftGiddyUpModule</li>
 		</value>
 	</Operation>
 </Patch>
