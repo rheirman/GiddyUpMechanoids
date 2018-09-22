@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GU_Mech_CraftGiddyUpModule.label>騎乗モジュールを作る</GU_Mech_CraftGiddyUpModule.label>
+  <GU_Mech_CraftGiddyUpModule.description>騎乗モジュールを作成する。</GU_Mech_CraftGiddyUpModule.description>
+  <GU_Mech_CraftGiddyUpModule.jobString>騎乗モジュールを製作中</GU_Mech_CraftGiddyUpModule.jobString>
+
+  <GU_Mech_InstallGiddyUpModule.label>騎乗モジュールを搭載</GU_Mech_InstallGiddyUpModule.label>
+  <GU_Mech_InstallGiddyUpModule.description>あなたの入植者がメカノイドに騎乗できるようにします。</GU_Mech_InstallGiddyUpModule.description>
+  <GU_Mech_InstallGiddyUpModule.jobString>メカノイド改良中</GU_Mech_InstallGiddyUpModule.jobString>
+
+</LanguageData>

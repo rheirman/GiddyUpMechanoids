@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GU_BME_Tabs_Title>Mod設定</GU_BME_Tabs_Title>
+  <GU_BME_tab1>Mod設定を変更しました。</GU_BME_tab1>
+  <GU_BME_MountChance_Title>敵のメカノイド騎乗率</GU_BME_MountChance_Title>
+  <GU_BME_MountChance_Description>Mod設定で変更できる、各種それぞれのメカノイドが敵のポーンによって騎乗されている確率です。</GU_BME_MountChance_Description>
+  <GU_BME_BodySizeFilter_Title>身体サイズで分類</GU_BME_BodySizeFilter_Title>
+  <GU_BME_BodySizeFilter_Description>身体サイズ別に騎乗可能なメカノイドをフィルタリングします</GU_BME_BodySizeFilter_Description>
+  <GU_BME_Mechselection_Title>騎乗可能なメカノイドを選択</GU_BME_Mechselection_Title>
+  <GU_BME_Mechselection_Description>上記の身体サイズで分類を使用して、身体サイズでフィルタリングして、タイルをクリックする事で例外を設定します</GU_BME_Mechselection_Description>
+  <GU_BME_Reason_NotActivated>騎乗できません。メカノイドを稼働状態にする必要があります</GU_BME_Reason_NotActivated>
+  <GU_BME_Reason_NotHacked>騎乗できません。メカノイドはハッキングされていません</GU_BME_Reason_NotHacked>
+  <GU_BME_Reason_NoModule>騎乗できません。騎乗モジュールが取り付けられていません</GU_BME_Reason_NoModule>
+  <GU_BME_Reason_Turret>騎乗できません。タレットが邪魔です</GU_BME_Reason_Turret>
+
+</LanguageData>
