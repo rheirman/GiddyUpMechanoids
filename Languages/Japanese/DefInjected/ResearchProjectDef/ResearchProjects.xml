@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GU_Mech_GiddyUpModule.label>騎乗モジュール</GU_Mech_GiddyUpModule.label>
+  <GU_Mech_GiddyUpModule.description>このモジュールは、それを搭載するとメカノイド用の鞍と操縦用インターフェースの両方として機能します。メカノイドにタレットが搭載されていない場合に、入植者が戦闘時に乗ることができます。これは「Giddy-up！Battle Mechs」のMod設定で騎乗可能なメカノイドにだけ搭載できます。</GU_Mech_GiddyUpModule.description>
+
+</LanguageData>

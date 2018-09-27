@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GU_BME_Tabs_Title>Mod-Einstellungen</GU_BME_Tabs_Title>
+  <GU_BME_tab1>Ändere Mod-Einstellungen..</GU_BME_tab1>
+  <GU_BME_BodySizeFilter_Title>Nach Körpergröße sortieren</GU_BME_BodySizeFilter_Title>
+  <GU_BME_BodySizeFilter_Description>Sortiere reitbare Mechanoide nach Größe</GU_BME_BodySizeFilter_Description>
+  <GU_BME_Mechselection_Title>Wähle reitbare Mechanoide</GU_BME_Mechselection_Title>
+  <GU_BME_Mechselection_Description>Benutze den Filter um nach Größe zu sortieren und klicke auf die Felder um Ausnahmen zu erstellen.</GU_BME_Mechselection_Description>
+  <GU_BME_Reason_NotActivated>Nicht reitbar, Mechanoid muss aktiviert sein.</GU_BME_Reason_NotActivated>
+  <GU_BME_Reason_NotHacked>Nicht reitbar, Mechanoid wurde nicht gehackt.</GU_BME_Reason_NotHacked>
+  <GU_BME_Reason_NoModule>Nicht reitbar, Reiten-Modul muss installiert sein.</GU_BME_Reason_NoModule>
+  <GU_BME_Reason_Turret>Nicht reitbar, Geschütz im Weg</GU_BME_Reason_Turret>
+
+</LanguageData>
