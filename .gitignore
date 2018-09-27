@@ -1,1 +1,3 @@
-
+*.vs
+Source/Giddy-up-Mechanoids/.vs/*
+Source/Giddy-up-Mechanoids/obj/*

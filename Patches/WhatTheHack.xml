@@ -11,6 +11,19 @@
 			</li> 
 		</operations>
 	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[race/fleshType = "Mechanoid" and not (recipes)]</xpath>
+				<value>
+					<recipes>
+						<li>GU_Mech_InstallGiddyUpModule</li>
+					</recipes>		
+				</value>
+			</li> 
+		</operations>
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "WTH_TableMechanoidWorkshop"]/recipes</xpath>
 		<value>
