@@ -16,10 +16,11 @@ namespace GiddyUpMechanoids.Harmony
     [HarmonyPatch(typeof(IncidentWorker_Raid_TryExecuteWorker), "SpawnHackedMechanoids")]
     class WTH_IncidentWorker_Raid_TryExecuteWorker
     {
-        static void Postfix(ref List<Pawn> list)
+        static void Postfix(ref IEnumerable<Pawn> __result)
         {
-            List<Pawn> mechs = list.FindAll((Pawn p) => p.IsHacked());
-            List<Pawn> humanlikes = list.FindAll((Pawn h) => h.RaceProps.Humanlike && GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(h).mount == null);
+
+            List<Pawn> mechs = __result.ToList().FindAll((Pawn p) => p.IsHacked());
+            List<Pawn> humanlikes = __result.ToList().FindAll((Pawn h) => h.RaceProps.Humanlike && GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(h).mount == null);
 
             Random r = new Random();
             foreach(Pawn mech in mechs)
