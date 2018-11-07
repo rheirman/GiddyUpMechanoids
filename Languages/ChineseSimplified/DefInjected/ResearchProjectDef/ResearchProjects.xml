@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GU_Mech_GiddyUpModule.label>骑乘模组</GU_Mech_GiddyUpModule.label>
+  <GU_Mech_GiddyUpModule.description>这个模块是一个鞍形接口,让殖民者可以骑着机械族战斗,这个模块与炮塔模块是冲突的,当炮塔模块启用时无法骑乘.</GU_Mech_GiddyUpModule.description>
+
+
+</LanguageData>

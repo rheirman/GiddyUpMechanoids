@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GU_BME_Tabs_Title>模组设置</GU_BME_Tabs_Title>
+  <GU_BME_tab1>修改模组设置..</GU_BME_tab1>
+  <GU_BME_MountChance_Title>敌人骑乘机械的几率</GU_BME_MountChance_Title>
+  <GU_BME_MountChance_Description>敌人有机会骑乘被控制的机械</GU_BME_MountChance_Description>
+  <GU_BME_BodySizeFilter_Title>按体型过滤</GU_BME_BodySizeFilter_Title>
+  <GU_BME_BodySizeFilter_Description>按照体型过滤可骑乘的机械</GU_BME_BodySizeFilter_Description>
+  <GU_BME_Mechselection_Title>选择机械坐骑</GU_BME_Mechselection_Title>
+  <GU_BME_Mechselection_Description>使用上面的过滤器过滤机械然后单击进行选择</GU_BME_Mechselection_Description>
+  <GU_BME_Reason_NotActivated>不能骑乘,机械必须被激活</GU_BME_Reason_NotActivated>
+  <GU_BME_Reason_NotHacked>不能骑乘,机械没有被控制</GU_BME_Reason_NotHacked>
+  <GU_BME_Reason_NoModule>不能启程,机械没有安装骑乘模组</GU_BME_Reason_NoModule>
+  <GU_BME_Reason_Turret>不能骑乘,炮塔模块启动了</GU_BME_Reason_Turret>
+
+</LanguageData>
