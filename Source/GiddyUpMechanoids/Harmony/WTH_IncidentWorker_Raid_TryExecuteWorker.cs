@@ -10,14 +10,19 @@ using Verse.AI;
 using GiddyUpCore.Jobs;
 using GiddyUpCore.Storage;
 using GiddyUpCore.Utilities;
+using RimWorld;
 
 namespace GiddyUpMechanoids.Harmony
 {
     [HarmonyPatch(typeof(IncidentWorker_Raid_TryExecuteWorker), "SpawnHackedMechanoids")]
     class WTH_IncidentWorker_Raid_TryExecuteWorker
     {
-        static void Postfix(ref IEnumerable<Pawn> __result)
+        static void Postfix(ref IEnumerable<Pawn> __result, IncidentParms parms)
         {
+            if(parms.raidArrivalMode != PawnsArrivalModeDefOf.EdgeWalkIn)
+            {
+                return;
+            }
 
             List<Pawn> mechs = __result.ToList().FindAll((Pawn p) => p.IsHacked());
             List<Pawn> humanlikes = __result.ToList().FindAll((Pawn h) => h.RaceProps.Humanlike && GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(h).mount == null);
@@ -42,7 +47,7 @@ namespace GiddyUpMechanoids.Harmony
             ExtendedPawnData riderData = GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(rider);
             ExtendedPawnData mechData = GiddyUpCore.Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(mech);
             riderData.mount = mech;
-            TextureUtility.setDrawOffset(riderData);
+            GiddyUpCore.Utilities.TextureUtility.setDrawOffset(riderData);
             mechData.ownedBy = rider;
             riderData.owning = mech;
             mech.health.AddHediff(GU_Mech_DefOf.GU_Mech_GiddyUpModule);
