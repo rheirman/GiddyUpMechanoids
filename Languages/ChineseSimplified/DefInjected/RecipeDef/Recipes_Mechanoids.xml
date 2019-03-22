@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GU_Mech_CraftGiddyUpModule.label>制造骑乘模组</GU_Mech_CraftGiddyUpModule.label>
+  <GU_Mech_CraftGiddyUpModule.description>制造</GU_Mech_CraftGiddyUpModule.description>
+  <GU_Mech_CraftGiddyUpModule.jobString>制造中</GU_Mech_CraftGiddyUpModule.jobString>
+
+  <GU_Mech_InstallGiddyUpModule.label>安装骑乘模组</GU_Mech_InstallGiddyUpModule.label>
+  <GU_Mech_InstallGiddyUpModule.description>安装骑乘模组.</GU_Mech_InstallGiddyUpModule.description>
+  <GU_Mech_InstallGiddyUpModule.jobString>安装模组中</GU_Mech_InstallGiddyUpModule.jobString>
+
+
+</LanguageData>
