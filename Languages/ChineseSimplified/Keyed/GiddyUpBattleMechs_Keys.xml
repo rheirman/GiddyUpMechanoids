@@ -10,7 +10,7 @@
   <GU_BME_Mechselection_Description>使用上面的过滤器过滤机械然后单击进行选择</GU_BME_Mechselection_Description>
   <GU_BME_Reason_NotActivated>不能骑乘,机械必须被激活</GU_BME_Reason_NotActivated>
   <GU_BME_Reason_NotHacked>不能骑乘,机械没有被控制</GU_BME_Reason_NotHacked>
-  <GU_BME_Reason_NoModule>不能启程,机械没有安装骑乘模组</GU_BME_Reason_NoModule>
+  <GU_BME_Reason_NoModule>不能骑乘,机械没有安装骑乘模组</GU_BME_Reason_NoModule>
   <GU_BME_Reason_Turret>不能骑乘,炮塔模块启动了</GU_BME_Reason_Turret>
 
 </LanguageData>
