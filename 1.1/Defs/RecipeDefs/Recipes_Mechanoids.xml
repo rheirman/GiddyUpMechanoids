@@ -1,0 +1,109 @@
+<Defs>
+  <RecipeDef>
+	<defName>GU_Mech_CraftGiddyUpModule</defName>
+	<label>craft giddy-up! module</label>
+	<description>Craft a giddy-up! module</description>
+	<jobString>Crafting</jobString>
+	<workSpeedStat>WTH_HackingMaintenanceSpeed</workSpeedStat>
+	<effectWorking>Repair</effectWorking>
+	<soundWorking>Recipe_Machining</soundWorking>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<ingredients>
+		<li>
+			<filter>
+			  <thingDefs>
+				<li>WTH_MechanoidChip</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WTH_MechanoidParts</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Plasteel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+  		<li>
+			<filter>
+				<thingDefs>
+					<li>DevilstrandCloth</li>
+				</thingDefs>
+			</filter>
+			<count>40</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+			<thingDefs>
+				<li>WTH_MechanoidChip</li>
+				<li>WTH_MechanoidParts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plasteel</li>
+				<li>DevilstrandCloth</li>			
+			</thingDefs>
+		</fixedIngredientFilter>
+	<products>
+	  <GU_Mech_GiddyUpModule>1</GU_Mech_GiddyUpModule>
+	</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	<workSkill>Crafting</workSkill>
+	<researchPrerequisite>GU_Mech_GiddyUpModule</researchPrerequisite>
+  </RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>GU_Mech_InstallGiddyUpModule</defName>
+		<label>install giddy-up! module</label>
+		<description>Allows the mechanoid to be mounted by your colonists.</description>
+		<workerClass>WhatTheHack.Recipes.Recipe_ModifyMechanoid</workerClass>
+		<jobString>Modifying mechanoid</jobString>
+		<workAmount>3500</workAmount>
+		<surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>		
+		<skillRequirements>
+			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Repair</effectWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GU_Mech_GiddyUpModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<appliedOnFixedBodyParts>
+			<li>Reactor</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>GU_Mech_GiddyUpModule</addsHediff>
+		<modExtensions>
+			<li Class="WhatTheHack.DefModExtension_Recipe">
+				<requireBed>true</requireBed>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+</Defs>

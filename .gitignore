@@ -1,3 +1,4 @@
 *.vs
-Source/Giddy-up-Mechanoids/.vs/*
-Source/Giddy-up-Mechanoids/obj/*
+Source/GiddyUpMechanoids/.vs/*
+Source/GiddyUpMechanoids/obj/*
+v1.1/Source/GiddyUpMechanoids/obj/*

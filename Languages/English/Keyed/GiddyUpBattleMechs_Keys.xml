@@ -12,4 +12,5 @@
 	<GU_BME_Reason_NotHacked>Cannot mount, mechanoid not hacked</GU_BME_Reason_NotHacked>
 	<GU_BME_Reason_NoModule>Cannot mount, no mounting module installed</GU_BME_Reason_NoModule>
 	<GU_BME_Reason_Turret>Cannot mount, turret in the way</GU_BME_Reason_Turret>
+	<GU_BME_Reason_NotAllowed>not allowed in mod settings</GU_BME_Reason_NotAllowed>
 </LanguageData>
