@@ -16,7 +16,6 @@ namespace GiddyUpMechanoids.Harmony
             if (__instance.recipe == GU_Mech_DefOf.GU_Mech_InstallGiddyUpModule && !Base.IsAllowedInModOptions(pawn.def.defName))
             {
                 reason = "GU_BME_Reason_NotAllowed".Translate();
-                Log.Message("Mech not allowed in mod options");
                 __result = false;
             }
         }

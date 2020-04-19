@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase_GiddyUpMechanoids">
+		<modNameReadable>Giddy-up! Mechanoids</modNameReadable>
+		<modIdentifier>GiddyUpMechanoids</modIdentifier>
+		<linkUrl>https://ludeon.com/forums/index.php?topic=37323.0</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase_GiddyUpMechanoids">
+		<defName>GiddyUpMechanoids</defName>
+		<assemblyVersion>1.1.0</assemblyVersion>
+		<content>
+Giddy-up Mechanoids has been updated to support Rimworld 1.1. Version 1.0 is still supported thanks to multi-versioning. 
+		</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
