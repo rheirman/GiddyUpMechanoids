@@ -12,5 +12,6 @@
   <GU_BME_Reason_NotHacked>騎乗できません。メカノイドはハッキングされていません</GU_BME_Reason_NotHacked>
   <GU_BME_Reason_NoModule>騎乗できません。騎乗モジュールが取り付けられていません</GU_BME_Reason_NoModule>
   <GU_BME_Reason_Turret>騎乗できません。タレットが邪魔です</GU_BME_Reason_Turret>
+  <GU_BME_Reason_NotAllowed>Mod設定で不許可</GU_BME_Reason_NotAllowed>
 
 </LanguageData>
